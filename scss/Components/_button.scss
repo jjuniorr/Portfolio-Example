@@ -1,0 +1,45 @@
+.btn {
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: $default-letter-spacing;
+  @include easeOut;
+  font-weight: 400;
+
+  &--default {
+    border: 1px $secondary-dark solid;
+    color: $primary-light;
+
+    &:hover {
+      color: set-hover-color($primary-light);
+      border: 1px set-hover-color($primary-light) solid;
+    }
+  }
+
+  &--sm {
+    padding: 1.3rem 3rem;
+    font-size: 1.3rem;
+  }
+
+  &--md {
+    padding: 2rem 7rem;
+    font-size: 1.3rem;
+  }
+
+  &--lg {
+    padding: 2.8rem 5rem;
+    font-size: 1.1rem;
+  }
+
+  &--bold {
+    font-weight: 600;
+  }
+
+  &__pointer {
+    color: $secondary-light;
+
+    &:hover {
+      color: darken($secondary-light, 40%);
+    }
+  }
+}

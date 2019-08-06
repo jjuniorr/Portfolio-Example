@@ -1,0 +1,4 @@
+//Set Text Color
+@function set-hover-color($color) {
+  @return lighten($color: $color, $amount: 60%);
+}

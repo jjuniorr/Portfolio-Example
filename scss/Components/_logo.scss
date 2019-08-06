@@ -1,0 +1,25 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  text-transform: uppercase;
+  &__main-text {
+    font-weight: 600;
+    letter-spacing: $lg-letter-spacing;
+    font-size: 3rem;
+    color: $primary-dark;
+    &--highlighted {
+      color: $highlight-orange;
+    }
+  }
+
+  &__subtext {
+    align-self: start;
+    letter-spacing: $md-letter-spacing;
+    font-size: 1.2rem;
+    margin-top: -1rem;
+    color: $secondary-dark;
+  }
+}
